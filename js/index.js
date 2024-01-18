@@ -1,8 +1,8 @@
 const getData = async () => {
     let valueCountry = document.getElementById("input-country").value
-    const url = `https://covid-193.p.rapidapi.com/statistics?country=${valueCountry ? valueCountry : null}`;
+    const url = ``;
     const options = {
-        method: 'GET',
+        method: '',
         headers: {
            
         }
