@@ -1,11 +1,10 @@
 const getData = async () => {
     let valueCountry = document.getElementById("input-country").value
-    const url = `https://covid-193.p.rapidapi.com/statistics?country=${valueCountry ? valueCountry : "indonesia"}`;
+    const url = `https://covid-193.p.rapidapi.com/statistics?country=${valueCountry ? valueCountry : null }`;
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '96919f6eaemsh63fc3ac50061c24p1dd3cdjsneb4a06b3b0aa',
-            'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
+           
         }
     };
     try {
