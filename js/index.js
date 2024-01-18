@@ -1,6 +1,6 @@
 const getData = async () => {
     let valueCountry = document.getElementById("input-country").value
-    const url = `https://covid-193.p.rapidapi.com/statistics?country=${valueCountry ? valueCountry : null }`;
+    const url = `https://covid-193.p.rapidapi.com/statistics?country=${valueCountry ? valueCountry : null}`;
     const options = {
         method: 'GET',
         headers: {
@@ -20,8 +20,8 @@ const getData = async () => {
         let getTotalDeath = document.getElementById("totalDeath")
         let getTotalTest = document.getElementById("totalTest")
 
-        getActiveCase.innerHTML  = dataCovid.cases.active ? dataCovid.cases.active : "no data"
-        getNewCase.innerHTML  = dataCovid.cases.new ? dataCovid.cases.new : "no data"
+        getActiveCase.innerHTML = dataCovid.cases.active ? dataCovid.cases.active : "no data"
+        getNewCase.innerHTML = dataCovid.cases.new ? dataCovid.cases.new : "no data"
         getRecoveredCase.innerHTML = dataCovid.cases.recovered ? dataCovid.cases.recovered : "no data"
         getTotalCase.innerHTML = dataCovid.cases.total ? dataCovid.cases.total : "no data"
         getTotalDeath.innerHTML = dataCovid.deaths.total ? dataCovid.deaths.total : "no data"
@@ -29,7 +29,7 @@ const getData = async () => {
 
 
     } catch (error) {
-        console.error(error);
+        alert("no country found");
     }
 
 }
